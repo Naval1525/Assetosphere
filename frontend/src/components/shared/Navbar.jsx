@@ -34,6 +34,18 @@ const Navbar = () => {
               >
                 Dashboard
               </Link>
+              <Link
+                to="/uploadbill"
+                className="hover:text-blue-600 transition duration-200"
+              >
+                Upload Bill
+              </Link>
+              <Link
+                to="/billlist"
+                className="hover:text-blue-600 transition duration-200"
+              >
+                Bill List
+              </Link>
               <button
                 onClick={handleLogout}
                 className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition duration-200"

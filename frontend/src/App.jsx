@@ -4,6 +4,8 @@ import Navbar from './components/shared/Navbar'
 import Login from './components/auth/Login'
 import Signup from './components/auth/Signup'
 import Home from './components/Home'
+import BillUpload from './components/BillUpload'
+import BillList from './components/BillList'
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/uploadbill" element={<BillUpload />} />
+            <Route path="/billlist" element={<BillList />} />
           </Routes>
         </main>
       </div>
