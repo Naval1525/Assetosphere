@@ -8,7 +8,10 @@ import BillUpload from "./components/BillUpload";
 import BillList from "./components/BillList";
 import InsuranceMarketplace from "./components/InsuranceMarketplace";
 import Dashboard from "./components/Dashboard";
-
+import CompanyRegister from "./components/auth/CompanyRegister";
+import CompanyLogin from "./components/auth/CompanyLogin";
+import CompanyDashboard from "./components/CompanyDashBoard";
+import PlanPurchase from "./components/PlanPurchase";
 function App() {
   return (
     <Router>
@@ -23,6 +26,12 @@ function App() {
             <Route path="/billlist" element={<BillList />} />
             <Route path="/insurance" element={<InsuranceMarketplace />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/company/register" element={<CompanyRegister />} />
+            <Route path="/company/login" element={<CompanyLogin />} />
+            <Route path="/company/dashboard" element={<CompanyDashboard />} />
+            <Route path="/company/plans/:planId" element={<PlanPurchase />} />
+            <Route path="/purchase" element={<PlanPurchase />} />
+            
           </Routes>
         </main>
       </div>
