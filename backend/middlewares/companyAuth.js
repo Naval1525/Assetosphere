@@ -1,11 +1,6 @@
 // middleware/companyAuth.js
 import jwt from 'jsonwebtoken';
-import Company from '../models/Company.js';
-
-/**
- * Middleware to authenticate company JWT tokens
- * Used to protect routes that require company authentication
- */
+import Company from '../
 const companyAuth = async (req, res, next) => {
   try {
     // Get token from header
